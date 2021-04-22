@@ -338,11 +338,11 @@ body {
     position: absolute;
     bottom: 268px;
     left: 100px;
-    text-align: right;
+    text-align: left;
 }
 .work-box-2-body {
     position: absolute;
-    text-align: right;
+    text-align: left;
     bottom: 205px;
     left: 100px;
     margin: 0;

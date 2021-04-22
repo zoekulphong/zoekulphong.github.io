@@ -1,0 +1,317 @@
+/*body*/
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--cream);
+    width: auto;
+    height: auto;
+    overflow-x: hidden;
+}
+
+/*colors*/
+:root {
+    --blue: #ABD7FF;
+    --red: #FF4E37;
+    --pink: #FED4CE;
+    --dark: #212A32;
+    --cream: #FAF4F2;
+}
+
+/*text styles*/
+.h1 {
+    color: var(--red);
+    text-align: left;
+    font: 56px Qaligo;
+    line-height: 88px;
+    margin: 0;
+    white-space: nowrap;
+}
+.h2 {
+    color: var(--red);
+    font: 36px Qaligo;
+    margin: 0;
+}
+.h3 {
+    color: var(--dark);
+    font-weight: semibold;
+    font-size: 24px;
+    font-family: Poppins;
+    margin: 0;
+    line-height: 32px;
+}
+.body-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--dark);
+    margin: 0;
+}
+
+/*misc*/
+.line {
+    background-color: var(--blue);
+    border-width: 0;
+    height: 6px;
+    border-radius: 3px;
+    margin: 0;
+}
+.button {
+    background-color: var(--pink);
+    border-width: 0;
+    height: 40px;
+    border-radius: 20px;
+    user-select: none;
+}
+
+/*content*/
+/*header*/
+.home-button {
+    color: var(--red);
+    font: 16px Qaligo;
+    margin: 0;
+    line-height: 16px;
+    position: fixed;
+    left: 32px;
+    top: 32px;
+    text-decoration: none;
+    z-index: 1;
+}
+.header-image {
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    object-fit: cover;
+}
+.header-body {
+    position: absolute;
+    left: 120px;
+    top: 170px;
+}
+.header-h1 {
+    position: relative;
+    top: 0px;
+}
+.header-line {
+    position: absolute;
+    width: 60px;
+    top: 124px;
+}
+.header-h3 {
+    position: absolute;
+    top: 166px; 
+}
+.header-description {
+    position: absolute;
+    width: 600px;
+    top: 209px;
+}
+
+/*intro*/
+.intro-box {
+    position: absolute;
+    width: 83.333%;
+    height: 400px;
+    left: 8.333%;
+    top: 820px;
+    background: #FFFFFF;
+    border-radius: 100px 0px 0px 0px; 
+}
+.intro-h3 {
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+.intro-description {
+    position: absolute;
+    width: 500px;
+    top: 148px;
+    left: 100px;
+}
+.intro-image {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    right: 40px;
+    width: 462px;
+    height: 320px;
+}
+
+/*process*/
+.process-body {
+    position: absolute;
+    width: 100%;
+    height: 1041px;
+    top: 1340px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.process-mockup-1 {
+    position: absolute;
+    top: 1080px;
+    left: 200px;
+    width: 460px;
+    height: 327px;
+}
+.process-mockup-2 {
+    position: absolute;
+    top: 1080px;
+    right: 200px;
+    width: 460px;
+    height: 327px;
+}
+.process-h3 {
+    position: absolute;
+    text-align: right;
+    left: 360px;
+    top: 747px;
+}
+.process-description {
+    position: absolute;
+    text-align: left;
+    width: 720px;
+    left: 360px;
+    top: 795px;
+}
+.process-linktext-1 {
+    position: absolute;
+    text-align: center;
+    top: 1526px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.process-linktext-2 {
+    position: absolute;
+    text-align: center;
+    top: 1590px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.process-video {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.process-background {
+    position: absolute;
+    top: 1340px;
+    left: 0;
+    width: 100%;
+    height: 1734px;
+    background-color: var(--pink);
+    z-index: -5;
+}
+.process-link {
+    color: var(--red);
+    text-decoration: none;
+}
+
+/*conclusion*/
+.conclusion-box {
+    position: absolute;
+    width: 83.333%;
+    height: 400px;
+    left: 8.333%;
+    top: 3202px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 100px 0px;   
+}
+.conclusion-h3 {
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+.conclusion-body-text {
+    position: absolute;
+    left: 100px;
+    top: 148px;
+    width: 483px;
+}
+.conclusion-image {
+    position: absolute;
+    top: 115px;
+    right: 80px;
+    width: 440px;
+    height: 170.7px;
+}
+
+/*contact*/
+.contact-box {
+    position: absolute;
+    width: 91.667%;
+    height: 400px;
+    left: 0px;
+    top: 4005px;
+    background: #FFFFFF;
+    border-radius: 0px 100px 0px 0px;
+}
+.contact-h2 {
+    position: absolute;
+    left: 64px;
+    top: -32px;
+}
+.contact-body {
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+}
+.contact-h3 {
+    position: relative;
+    text-align: center;
+}
+.contact-line {
+    position: relative;
+    width: 60px;
+    top: 24px;
+    margin: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.contact-button {
+    position: relative;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    width: 258px;
+    top: 58px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.contact-button:hover {
+    color: var(--red);
+
+} 
+.contact-button:focus {
+    outline: none;
+}
+.contact-nav {
+    position: absolute;
+    bottom: 16px;
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.contact-link {
+    margin-right: 64px;
+    text-decoration: none;
+    text-align: center;
+}
+.contact-link:hover {
+    color: var(--red);
+}
+.contact-link-github {
+    text-decoration: none;
+    text-align: center;
+}
+.contact-link-github:hover {
+    color: var(--red);
+}

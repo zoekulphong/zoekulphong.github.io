@@ -283,21 +283,22 @@ body {
 }
 .work-box-1-h3 {
     position: absolute;
-    top: 100px;
-    left: 100px;
+    bottom: 268px;
+    right: 100px;
+    text-align: right;
 }
 .work-box-1-body {
     position: absolute;
-    text-align: left;
-    top: 139px;
-    left: 100px;
+    text-align: right;
+    bottom: 205px;
+    right: 100px;
     margin: 0;
 }
 .work-box-1-line {
     position: absolute;
     width: 60px;
-    left: 100px;
-    top: 221px;
+    right: 100px;
+    bottom: 173px;
 }
 .work-box-1-button {
     position: absolute;
@@ -307,8 +308,8 @@ body {
     text-align: center;
     font-size: 16px;
     width: 140px;
-    top: 259px;
-    left: 100px;
+    bottom: 101px;
+    right: 100px;
 }
 .work-box-1-button:hover {
     color: var(--red);
@@ -318,10 +319,10 @@ body {
 }
 .work-box-1-mockup {
     position: absolute;
-    width: 667.25px;
-    height: 486.3px;
-    right: 0px;
-    top: -44px;
+    width: 562.44px;
+    height: 400px;
+    left: 40px;
+    top: 40px;
     border: 0;
 }
 .work-box-2 {
@@ -329,27 +330,27 @@ body {
     width: 83.333%;
     height: 400px;
     left: 8.333%;
-    top: 2380px;
+    top: 2383px;
     background: #FFFFFF;
-    border-radius: 0px 0px 100px 0px;   
+    border-radius: 0px 0px 0px 0px;   
 }
 .work-box-2-h3 {
     position: absolute;
     bottom: 268px;
-    right: 100px;
+    left: 100px;
     text-align: right;
 }
 .work-box-2-body {
     position: absolute;
     text-align: right;
     bottom: 205px;
-    right: 100px;
+    left: 100px;
     margin: 0;
 }
 .work-box-2-line {
     position: absolute;
     width: 60px;
-    right: 100px;
+    left: 100px;
     bottom: 173px;
 }
 .work-box-2-button {
@@ -361,7 +362,7 @@ body {
     font-size: 16px;
     width: 140px;
     bottom: 101px;
-    right: 100px;
+    left: 100px;
 }
 .work-box-2-button:hover {
     color: var(--red);
@@ -373,18 +374,70 @@ body {
     position: absolute;
     width: 562.5px;
     height: 400px;
+    right: 40px;
+    bottom: 40px;
+    border: 0;
+}
+.work-box-3 {
+    position: absolute;
+    width: 83.333%;
+    height: 400px;
+    left: 8.333%;
+    top: 2900px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 100px 0px;   
+}
+.work-box-3-h3 {
+    position: absolute;
+    bottom: 268px;
+    right: 100px;
+    text-align: right;
+}
+.work-box-3-body {
+    position: absolute;
+    text-align: right;
+    bottom: 205px;
+    right: 100px;
+    margin: 0;
+}
+.work-box-3-line {
+    position: absolute;
+    width: 60px;
+    right: 100px;
+    bottom: 173px;
+}
+.work-box-3-button {
+    position: absolute;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    width: 140px;
+    bottom: 101px;
+    right: 100px;
+}
+.work-box-3-button:hover {
+    color: var(--red);
+}
+.work-box-3-button:focus {
+    outline: none;
+}
+.work-box-3-mockup {
+    position: absolute;
+    width: 562.5px;
+    height: 400px;
     left: 40px;
     bottom: 40px;
     border: 0;
 }
-
 /*contact*/
 .contact-box {
     position: absolute;
     width: 91.667%;
     height: 400px;
     left: 0px;
-    top: 3184px;
+    top: 3697px;
     background: #FFFFFF;
     border-radius: 0px 100px 0px 0px;
 }

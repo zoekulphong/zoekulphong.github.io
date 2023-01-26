@@ -1,59 +1,302 @@
 /*html*/
 .html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
-/*body*/
-body {
-    padding: 0;
-    margin: 0;
-    background: var(--neutral);
-}
-
-/*colors*/
+/* VARIABLES */
 :root {
-    --neutral: #EDEAE2;
-    --dark: #2E2D3A;
+	--neutral: #EFE7DC;
+	--dark: #1B2830;
+	--blue: #4E7891;
+	--accent: #6C2727; 
 }
 
-/*text styles*/
-h2 {
-    color: var(--dark);
-    font: 5rem Italiana;
+/* BODY */
+body {
+	margin: 0;
+	padding: 0;
 }
-h1 {
-    color: var(--dark);
-    font-weight: semibold;
-    font-size: 24px;
-    font-family: Poppins;
-    margin: 0;
+.main {
+	margin: 0;
+	padding: 2rem 2rem 0.5rem 2rem;
+	user-select: none;
 }
-p {
-    color: var(--dark);
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 28px;
-    color: var(--dark);
-}
-.decor {
-
+.vertical-stripes { 
+	background-color: var(--dark)
+} 
+.section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem 0 11rem 0;
 }
 
-/*misc*/
-.line {
-    background-color: var(--blue);
-    border-width: 0;
-    height: 6px;
-    border-radius: 3px;
-    margin: 0;
+/*TEXT*/
+@font-face {
+	font-family: "Cyrene";
+	src: url(https://riccardoagostinelli.com/cyrene-free-font) format("truetype");
 }
+h1, .h1 {
+	font-family: 'Cyrene';
+	font-size: 6rem;
+	font-weight: 400;
+	color: var(--neutral);
+	line-height: 4.75rem;
+	letter-spacing: 0.175rem;
+	margin: 0;
+	user-select: none;
+}
+h2, .h2 {
+	font-family: 'Cyrene';
+	font-size: 4rem;
+	font-weight: 400;
+	color: var(--blue);
+	line-height: 3.75rem;
+	margin: 0;
+	user-select: none;
+}
+h3, .h3 {
+	font-family: 'Cyrene';
+	font-size: 1.625rem;
+	font-weight: 400;
+	color: var(--header);
+	line-height: 1.875rem;
+	letter-spacing: 0.1rem;
+	margin: 0;
+	user-select: none;
+}
+p, .body {
+	font-family: 'Red Hat Display';
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: var(--neutral);
+	line-height: 2rem;
+	margin: 0;
+	text-decoration: none;
+}
+
+/* REM SETTINGS */
+html {
+	font-size: 8px;
+}
+@media only screen and (min-width: 240px) {
+	html {
+		font-size: 8px;
+	}
+}
+@media only screen and (min-width: 720px) {
+	html {
+		font-size: 10px;
+	}
+}
+/* use this one to differentiate between mobile/desktop (set things to mobile sizings and in this @media block set it to the desktop sizing) */
+@media only screen and (min-width: 750px) {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	.main {
+		margin: 0;
+		padding: 4rem 12rem 0.5rem 12rem;
+	}
+	.section {
+		align-items: stretch;
+	}
+	.vertical-stripes { 
+		background: linear-gradient( 270deg, 
+					var(--neutral), var(--neutral) 6rem, 
+					var(--dark) 6rem, var(--dark) 66rem, 
+					var(--neutral) 66rem, var(--neutral));
+		height: 100%;
+	} 
+	p, .body {
+		font-family: 'Red Hat Display';
+		font-size: 1.125rem;
+		font-weight: 400;
+		color: var(--neutral);
+		line-height: 1.625rem;
+		margin: 0;
+		text-decoration: none;
+	}	
+	.home-image {
+		height: 38rem !important;
+		object-fit: scale-down;
+		margin-bottom: 0 !important;
+	}
+	.home-title {
+		margin-bottom: 12rem !important;
+	}
+	.home-checker-2 {
+		margin-right: 38rem;
+	}
+	.about-image {
+		height: 36rem;
+		object-fit: scale-down;
+	}
+	.projects-cont {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-right: 10rem;
+	}
+	.project-descr {
+		gap: 2rem;
+	}
+	.only-small {
+		display: none;
+	}
+	.only-large {
+		display: block !important;
+	}
+}
+@media only screen and (min-width: 960px) {
+	html {
+		font-size: 12px;
+	}
+}
+@media only screen and (min-width: 1240px) {
+	html {
+		font-size: 14px;
+	}
+}
+@media only screen and (min-width: 1300px) {
+	.header {
+		position: sticky;
+		position: -webkit-sticky;
+		top: 4rem; 
+		z-index: 100;
+	}
+}
+
+/* HEADER */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+  top: 2rem; 
+}
+.icon {
+	width: 2.5rem;
+	object-fit: contain;
+}
+.nav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	color: var(--blue);
+	margin: 0;
+}
+
+/* HOME */
+.home-image {
+	height: 22rem;
+	object-fit: scale-down;
+	margin-bottom: 1rem;
+}
+
+/* ABOUT */
+.about-image {
+	height: 32rem;
+	object-fit: scale-down;
+}
+.about-icon {
+	width: 2.7rem;
+	object-fit: scale-down;
+}
+.about-links {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
+}
+
+/* PROJECTS */
+.projects-cont {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.project {
+	display: flex;
+}
+.project-image {
+	height: 18.75rem;
+	width: 18.75rem;
+	object-fit: cover;
+	border: 2px solid var(--blue);
+  transition: .75s ease;
+	
+}
+.project-image:hover {
+	opacity: 0.4;
+	
+  /* box-shadow: inset 900px 100px 0 0 var(--accent); */
+}
+.project-descr {
+	height: 19rem;
+	width: 19rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	color: var(--neutral);
+}
+
+/* FOOTER */
+.footer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
+}
+.contact-icon {
+	position: relative;
+	height: 1.5rem;
+	object-fit: scale-down;
+}
+.footer-checker {
+	max-width: 98.9vw;
+	height: 1.375rem;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+/*MISC*/
 .button {
-    background-color: var(--pink);
-    border-width: 0;
-    height: 40px;
-    border-radius: 20px;
-    user-select: none;
+  background-color: var(--blue);
+  text-decoration: none;
+  transition: color .75s ease-in-out, box-shadow .75s ease-in-out;
+  padding: 0.8rem 3rem;
+  border-radius: 2rem;
+	text-decoration: none;
 }
-
+.button:hover {
+  box-shadow: inset 900px 100px 0 0 var(--accent);
+}
+.link {
+	text-decoration: none;
+  transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+.link:hover {
+	color: var(--accent);
+}
+.checker {
+	height: 1.375rem;
+	object-fit: contain;
+}
+.checker-vert {
+	width: 2.75rem;
+	object-fit: contain;
+}
+.cont {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.75rem;
+}
+.only-large {
+	display: none;
+}

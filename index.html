@@ -7,96 +7,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display" rel="stylesheet">
   </head>
 
-  <body>
-    
-    <div>
-      <div class="home-section"><a id="home"></a></div>
-      <nav class="nav">
-        <ul class="nav">
-          <a class="body-text nav-link" href="#about">about</a>
-          <a class="body-text nav-link" href="#work">work</a>
-          <a class="body-text nav-link-contact" href="#contact">contact</a>
-        </ul>
-      </nav>
-      <h1>Zoe Kulphong</h1>
-      <p>COMPUTER SCIENCE * VISUAL ARTS</p>
-    </div>
-<!-- 
-    <div>
-      <div class="about-section"><a id="about"></a></div>
-      <div class="about-box">
-        <img class="about-image" src="./images/about-image.jpg"></img>  
-        <h2 class="h2 about-h2">about</h2> 
-        <div class="about-body">
-          <p class="body-text about-body-text">Hi! I’m Zoe, a computer science and visual arts student at The University of Kansas in Lawrence, Kansas. I love all things design and am currently exploring web development and UX/UI design. I also enjoy painting, drawing, knitting, and crocheting in my free time.</p> 
-          <div class="line about-line"></div>  
-          <h3 class="h3 about-h3">skills</h3>
-          <ul class="about-skills"> 
-            <div class="body-text about-skills-col">HTML<br>CSS</div>
-            <div class="body-text about-skills-col">Javascript<br>Figma</div>
-            <div class="body-text about-skills-col">C++<br>Python</div>
-            <a href="zoekulphong.github.io/images/Zoe-Kulphongpatana-Resume.pdf" target="_blank">  
-              <button class="button about-resume-button">resume</button>
-            </a>
-           </ul>
-        </div>  
+  <body class="vertical-stripes">
+    <div class="main">
+      <div if="nav" class="header">
+        <a href="#home" class="link"><img src="./public/icon.png" class="icon" id="icon"></img></a>
+        <nav>
+          <ul class="nav">
+            <a class="h3 link" href="#about">ABOUT</a>
+            <a class="h3 link" href="#projects">PROJECTS</a>
+            <a class="h3 link" href="#contact">CONTACT</a>
+          </ul>
+        </nav>
       </div>
-    </div>
 
-    <div>
-      <div class="work-section"><a id="work"></a></div>
-      <div class="work-box-1">
-        <h2 class="h2 work-h2">work</h2>
-        <h3 class="h3 work-box-1-h3">Crazy Ambulance</h3>
-        <p class="body-text work-box-1-body">an interactive First aid game<br>and hackathon winner</p>
-        <div class="line work-box-1-line"></div>
-        <a href="work-crazyambulance.html">
-            <button class="button work-box-1-button">see more</button>
-        </a>
-        <img class="work-box-1-mockup" src="./images/work-box-1-mockup.png"></img>
-      </div>
-      <div class="work-box-2">
-        <a href="work-viridia.html">
-            <button class="button work-box-2-button">see more</button>
-        </a>
-        <div class="line work-box-2-line"></div>
-        <p class="body-text work-box-2-body">a better way to care<br>for your plants</p>
-        <h3 class="h3 work-box-2-h3">Viridia</h3>
-        <img class="work-box-2-mockup" src="./images/work-box-2-mockup.png"></img>
-      </div>
-      <div class="work-box-3">
-        <a href="work-tryviridia.html">
-          <button class="button work-box-3-button">see more</button>
-        </a>
-        <div class="line work-box-3-line"></div>
-        <p class="body-text work-box-3-body">redesigning a<br>plant care company</p>
-        <h3 class="h3 work-box-3-h3">tryviridia.com</h3>
-        <img class="work-box-3-mockup" src="./images/work-box-3-mockup.jpg"></img>
-      </div>
-    </div>
-
-    <div>
-      <div class="contact-box">
-        <h2 class="h2 contact-h2"><a id="contact"></a>let's connect</h2> 
-        <div class="contact-body">
-          <h3 class="h3 contact-h3">got an idea or just want to say hi?</h3>
-          <div class="line contact-line"></div>
-          <a href="mailto:zckulphong@gmail.com">
-            <button class="button contact-button">zckulphong@gmail.com</button>
-          </a>
+      <div class="section" id="home">
+        <div style="display:flex;flex-direction:column">
+          <div class="cont" style="flex-wrap:wrap;align-items:flex-end">
+            <div style="display:inline-grid">
+              <img src="./public/home-image.png" id="home image" class="home-image only-large">
+            </div>
+            <div class="home-title">
+              <div style="display:flex;align-items:flex-end;gap:1rem">
+                <h1>ZOE</h1>
+                <img src="./public/home-image.png" id="home image" class="home-image only-small">
+                <img src="./public/home-checker-1.png" id="checker pattern" class="checker only-large" style="margin-bottom:0.75rem">
+              </div>
+              <h1>KULPHONG</h1>
+              <h3 style="color:var(--neutral)">COMPUTER SCIENCE & VISUAL ARTS</h3>
+            </div>
+          </div>
+          <img src="./public/home-checker-2.png" id="checker pattern" class="checker home-checker-2" style="margin-top:0.75rem">
         </div>
-        <ul class="contact-nav">
-          <a class="body-text contact-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/zoe-kulphongpatana-b9a9151b6/">Linkedin</a>
-          <a class="body-text contact-link" target="_blank" rel="noopener noreferrer" href="https://www.behance.net/zoekulphong">Behance</a>
-          <a class="body-text contact-link" target="_blank" rel="noopener noreferrer" href="https://dribbble.com/zoekulphong">Dribbble</a>
-          <a class="body-text contact-link-github" target="_blank" rel="noopener noreferrer" href="https://github.com/zoekulphong">GitHub</a>
-        </ul>
       </div>
-    </div> -->
 
-  </body>
-  
+      <div class="section" id="about">
+        <div class="cont" style="flex-wrap:wrap;align-items:flex-end">
+          <div class="cont">  
+            <div>
+              <h2>ABOUT</h2>
+              <img src="./public/about-image.png" id="about image" class="about-image">
+            </div>
+            <div class="about-links">
+              <a href="./public/ZoeKulphongpatanaResume.pdf"><img src="./public/resume.png" id="resume icon" class="about-icon"></a>
+              <a href="https://www.linkedin.com/in/kulphongpatana/"><img src="./public/linkedin.png" id="linkedin icon" class="about-icon"></a>
+              <a href="https://www.behance.net/zoekulphong"><img src="./public/behance.png" id="behance icon" class="about-icon"></a>
+              <a href="https://github.com/zoekulphong"><img src="./public/github.png" id="github icon" class="about-icon"></a>
+              <img src="./public/about-checker.png" id="checker pattern" class="checker-vert">
+            </div>
+          </div>
+          <div>
+            <p style="width:28rem;margin-bottom:5rem">Hi! I’m Zoe, a computer science and visual arts student at the University of Kansas. I am proficient in C++, Python, Swift, Kotlin, Ruby, HTML/CSS, and Javascript. I am the Director of HackKU and the Internal Vice President of the Society of Asian Scientists & Engineers. In my free time, I enjoy painting, drawing, crocheting, and knitting.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="projects">
+        <div class="projects-cont">
+          <div>
+            <h2>PROJECTS</h2>
+          </div>
+
+          <div class="project">
+            <div class="project-descr">
+              <h3>HackKU</h3>
+              <p style="width:12rem;text-align:center">KU's Annual Hackathon</p>
+              <a href="https://hackku.org/" class="body button">SEE MORE</a>
+            </div>
+            <img class="project-image" src="./public/hackku.png" id="hackku" class="project-image">
+          </div>
+
+          <div class="project">
+            <img class="project-image" src="./public/hackutd.png" id="hackutd" class="project-image">
+            <div class="project-descr">
+              <h3>HackUTD 2022</h3>
+              <p style="width:12rem;text-align:center">An app to bring together communities </p>
+              <a href="https://www.behance.net/gallery/158227815/PlateMates-HackUTD-2022" class="body button">SEE MORE</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-descr">
+              <h3>HackMIT 2022</h3>
+              <p style="width:12rem;text-align:center">YouTube data visualizer</p>
+              <a href="https://www.behance.net/gallery/154151611/YouTube-Data-Visualizer-HackMIT-2022" class="body button">SEE MORE</a>
+            </div>
+            <img class="project-image" src="./public/hackmit.png" id="hackmit" class="project-image">
+          </div>
+
+          <div class="project">
+            <img class="project-image" src="./public/art-supply-reviewer.jpg" id="art supply reviewer" class="project-image">
+            <div class="project-descr">
+              <h3 style="text-align:center">ART SUPPLY<br>REVIEWER</h3>
+              <p style="width:12rem;text-align:center">UX/UI & software development project</p>
+              <a href="https://www.behance.net/gallery/154301721/Art-Supply-Reviewer-UXUI-Software-Development" class="body button">SEE MORE</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-descr">
+              <h3>CRAZY AMBULANCE</h3>
+              <p style="width:12rem;text-align:center">Interactive First Aid game & HackKU winner</p>
+              <a href="https://www.behance.net/gallery/153113823/Crazy-Ambulance-Hackathon-Winning-GameWebsite" class="body button">SEE MORE</a>
+            </div>
+            <img class="project-image" src="./public/crazy-ambulance.png" id="crazy ambulance" class="project-image">
+          </div>
+
+          <div class="project">
+            <img class="project-image" src="./public/viridia.png" id="viridia" class="project-image">
+            <div class="project-descr">
+              <h3>VIRIDIA</h3>
+              <p style="width:12rem;text-align:center">Redesigning a mobile plant-care app</p>
+              <a href="https://www.behance.net/gallery/113986609/Viridia-Mobile-App" class="body button">SEE MORE</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <footer>
+        <div id="contact" class="footer">
+          <!-- <img src="./public/home-checker-2.png" id="checker pattern" class="checker"> -->
+          <div class="footer" style="color:var(--blue)">
+            <a href="mailto:zckulphong@gmail.com" id="email zckulphong@gmail.com" class="h3 link">LET's CONNECT</a>
+            <a href="mailto:zckulphong@gmail.com" id="email zckulphong@gmail.com"><img src="./public/email.png" id="email icon" class="contact-icon"></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div>
+      <img src="./public/footer-checker.png" id="checker pattern" class="footer-checker">
+    </div>
+  </body> 
 </html>

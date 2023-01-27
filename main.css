@@ -5,10 +5,10 @@
 
 /* VARIABLES */
 :root {
-	--neutral: #EFE7DC;
-	--dark: #1B2830;
-	--blue: #4E7891;
-	--accent: #6C2727; 
+	--neutral: #E3DED8;
+	--dark: #121A1F;
+	--blue: #517E99;
+	--accent: #B96666; 
 }
 
 /* BODY */
@@ -29,13 +29,16 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 1rem 0 11rem 0;
+	padding: 0 0 12rem 0;
 }
 
 /*TEXT*/
 @font-face {
-	font-family: "Cyrene";
-	src: url(https://riccardoagostinelli.com/cyrene-free-font) format("truetype");
+  font-family: 'Cyrene';
+  src: url('cyrene-webfont.eot?#iefix') format('embedded-opentype'), 
+   url('cyrene-webfont.woff') format('woff'), 
+   url('cyrene-webfont.ttf')  format('truetype'),
+   url('cyrene-webfont.svg#svgFontName') format('svg');
 }
 h1, .h1 {
 	font-family: 'Cyrene';
@@ -125,7 +128,7 @@ html {
 		margin-bottom: 0 !important;
 	}
 	.home-title {
-		margin-bottom: 12rem !important;
+		margin-bottom: 10rem !important;
 	}
 	.home-checker-2 {
 		margin-right: 38rem;
@@ -221,18 +224,32 @@ html {
 .project {
 	display: flex;
 }
+.project-image-cont {
+	position: relative;
+}
+.project-image-cont:hover .project-image{
+	opacity: 0.3;
+}
+.project-image-cont:hover .project-overlay{
+	opacity: 1;
+}
 .project-image {
 	height: 18.75rem;
 	width: 18.75rem;
 	object-fit: cover;
 	border: 2px solid var(--blue);
   transition: .75s ease;
-	
 }
-.project-image:hover {
-	opacity: 0.4;
-	
-  /* box-shadow: inset 900px 100px 0 0 var(--accent); */
+.project-overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+	color: var(--neutral);
 }
 .project-descr {
 	height: 19rem;

@@ -1,10 +1,8 @@
 /* COLORS */
 :root {
-  --off-black: #0A0A0D;
-  --off-white: #FFFDF2;
-  --blue: #5563FF;
-  --green: #D4FF29;
-  --orange: #FF4F29;
+  --dark: #0D0E0F;
+  --light: #FFF8F0;
+  --blue: #1772E5;
 }
 
 /* FONTS */
@@ -56,26 +54,26 @@ body {
   flex-direction: column;
   /* padding: 12rem 12rem; */
 }
-
+.nav-container {
+  background-color: var(--light);
+  width: 100vw;
+  height: 3rem;
+}
 .title-container {
   width: 100vw;
   height: 100vh;
   background-image: url("./assets/title-portrait.png");
   background-size: cover;
 }
-
 .about-container {
   width: 100vw;
   display: flex;
   flex-direction: column;
 }
-
 .about-main-container {
   display:flex;
 }
-
 .skills-container {
-  background-color: var(--green);
   display: flex;
   align-items: center;
   justify-content: center;
